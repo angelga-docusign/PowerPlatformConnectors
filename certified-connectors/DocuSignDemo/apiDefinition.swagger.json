@@ -1580,13 +1580,13 @@
         },
         "countryCode": {
           "description": "For SMS notifications, the country code, without leading + sign.",
-          "type": "string",
+          "type": "integer",
           "x-ms-summary": "SMS Country Code",
           "x-ms-visibility": "advanced"
         },
         "phoneNumber": {
           "description": "For SMS notifications, the phone number without the country code.",
-          "type": "string",
+          "type": "integer",
           "x-ms-summary": "SMS Phone Number",
           "x-ms-visibility": "advanced"
         }
