@@ -15,7 +15,9 @@
   },
   "host": "demo.docusign.net",
   "basePath": "/restapi/v2.1",
-  "schemes": ["https"],
+  "schemes": [
+    "https"
+  ],
   "paths": {
     "/accounts/{accountId}/connect": {
       "post": {
@@ -236,7 +238,9 @@
     },
     "/trigger/accounts/{accountId}/envelopes": {
       "get": {
-        "tags": ["DocuSign"],
+        "tags": [
+          "DocuSign"
+        ],
         "summary": "When an envelope status changes",
         "description": "Triggers a new flow when an envelope status changes.",
         "operationId": "OnEnvelopeStatusChanges",
@@ -302,7 +306,9 @@
     },
     "/accounts/{accountId}/envelopes/createBlankEnvelope": {
       "post": {
-        "tags": ["DocuSign"],
+        "tags": [
+          "DocuSign"
+        ],
         "summary": "Create envelope",
         "description": "Create a new blank envelope.",
         "operationId": "CreateBlankEnvelope",
@@ -379,7 +385,9 @@
     },
     "/accounts/{accountId}/envelopes/createFromTemplate": {
       "post": {
-        "tags": ["DocuSign"],
+        "tags": [
+          "DocuSign"
+        ],
         "summary": "Create envelope using template (V2)",
         "description": "Create a new envelope using a specified template.",
         "operationId": "CreateEnvelopeFromTemplate",
@@ -443,7 +451,10 @@
             "x-ms-test-value": "Created",
             "x-ms-visibility": "important",
             "type": "string",
-            "enum": ["Sent", "Created"]
+            "enum": [
+              "Sent",
+              "Created"
+            ]
           },
           {
             "name": "accountCustomFields",
@@ -468,10 +479,12 @@
         "deprecated": false,
         "x-ms-visibility": "important"
       }
-    },
+    },    
     "/accounts/{accountId}/envelopes": {
       "post": {
-        "tags": ["DocuSign"],
+        "tags": [
+          "DocuSign"
+        ],
         "summary": "DEPRECATED: Send envelope using template (V1)",
         "description": "Create a new envelope using a specified template.",
         "operationId": "SendEnvelope",
@@ -535,7 +548,10 @@
             "x-ms-test-value": "Created",
             "x-ms-visibility": "important",
             "type": "string",
-            "enum": ["Sent", "Created"]
+            "enum": [
+              "Sent",
+              "Created"
+            ]
           },
           {
             "name": "signers",
@@ -563,7 +579,9 @@
     },
     "/accounts/{accountId}/envelopes/{envelopeId}": {
       "put": {
-        "tags": ["DocuSign"],
+        "tags": [
+          "DocuSign"
+        ],
         "summary": "Send envelope",
         "description": "Send an existing envelope.",
         "operationId": "SendDraftEnvelope",
@@ -621,7 +639,9 @@
     },
     "/accounts/{accountId}/envelopes/{envelopeId}/recipients": {
       "get": {
-        "tags": ["DocuSign"],
+        "tags": [
+          "DocuSign"
+        ],
         "summary": "List recipients",
         "description": "List recipients for a specific envelope.",
         "operationId": "GetRecipientStatus",
@@ -704,7 +724,9 @@
         "x-ms-visibility": "advanced"
       },
       "post": {
-        "tags": ["DocuSign"],
+        "tags": [
+          "DocuSign"
+        ],
         "summary": "DEPRECATED: Add recipient to an envelope",
         "description": "Add recipient to an envelope.",
         "operationId": "AddRecipientToEnvelope",
@@ -788,7 +810,9 @@
         "x-ms-no-generic-test": true
       },
       "delete": {
-        "tags": ["DocuSign"],
+        "tags": [
+          "DocuSign"
+        ],
         "summary": "Remove recipient from an envelope",
         "description": "Remove recipient from an envelope",
         "operationId": "RemoveRecipientFromEnvelope",
@@ -900,7 +924,9 @@
     },
     "/accounts/{accountId}/envelopes/{envelopeId}/recipients/addRecipientV2": {
       "post": {
-        "tags": ["DocuSign"],
+        "tags": [
+          "DocuSign"
+        ],
         "summary": "Add recipient to an envelope (V2)",
         "description": "Add recipient to an envelope.",
         "operationId": "AddRecipientToEnvelopeV2",
@@ -1070,11 +1096,13 @@
         "deprecated": false,
         "x-ms-visibility": "important",
         "x-ms-no-generic-test": true
-      }
+      },
     },
     "/login_information": {
       "get": {
-        "tags": ["DocuSign"],
+        "tags": [
+          "DocuSign"
+        ],
         "summary": "Login",
         "description": "Login",
         "operationId": "GetLoginAccounts",
@@ -1098,7 +1126,9 @@
     },
     "/accounts/{accountId}/custom_fields": {
       "get": {
-        "tags": ["DocuSign"],
+        "tags": [
+          "DocuSign"
+        ],
         "summary": "Get custom fields",
         "description": "Returns a list of custom fields associated with an account.",
         "operationId": "GetCustomFields",
@@ -1137,7 +1167,9 @@
     },
     "/accounts/{accountId}/custom_fields": {
       "get": {
-        "tags": ["DocuSign"],
+        "tags": [
+          "DocuSign"
+        ],
         "summary": "Get custom fields",
         "description": "Returns a list of custom fields associated with an account.",
         "operationId": "GetCustomFields",
@@ -1176,7 +1208,9 @@
     },
     "/accounts/{accountId}/templates": {
       "get": {
-        "tags": ["DocuSign"],
+        "tags": [
+          "DocuSign"
+        ],
         "summary": "List templates",
         "description": "List templates for a specific account.",
         "operationId": "GetEnvelopeTemplates",
@@ -1218,7 +1252,9 @@
     },
     "/accounts/{accountId}/folders": {
       "get": {
-        "tags": ["DocuSign"],
+        "tags": [
+          "DocuSign"
+        ],
         "summary": "List folders",
         "description": "List folders for a specific account.",
         "operationId": "GetFolderList",
@@ -1260,7 +1296,9 @@
     },
     "/accounts/{accountId}/folders/{folderId}": {
       "get": {
-        "tags": ["DocuSign"],
+        "tags": [
+          "DocuSign"
+        ],
         "summary": "List envelopes",
         "description": "List envelopes under a particular folder.",
         "operationId": "GetFolderEnvelopeList",
@@ -1322,7 +1360,9 @@
     },
     "/accounts/{accountId}/envelopes/{envelopeId}/documents": {
       "get": {
-        "tags": ["DocuSign"],
+        "tags": [
+          "DocuSign"
+        ],
         "summary": "List documents",
         "description": "List documents in an envelope.",
         "operationId": "GetEnvelopeDocumentList",
@@ -1405,7 +1445,9 @@
         "x-ms-visibility": "internal"
       },
       "put": {
-        "tags": ["DocuSign"],
+        "tags": [
+          "DocuSign"
+        ],
         "summary": "Add documents to an envelope",
         "description": "Add documents to an envelope.",
         "operationId": "AddDocumentsToEnvelope",
@@ -1445,7 +1487,11 @@
                   "type": "array",
                   "items": {
                     "type": "object",
-                    "required": ["documentBase64", "fileExtension", "name"],
+                    "required": [
+                      "documentBase64",
+                      "fileExtension",
+                      "name"
+                    ],
                     "properties": {
                       "documentBase64": {
                         "type": "string",
@@ -1490,7 +1536,9 @@
     },
     "/signers/accounts/{accountId}/templates/{templateId}/recipients": {
       "get": {
-        "tags": ["DocuSign"],
+        "tags": [
+          "DocuSign"
+        ],
         "summary": "Get the signers of a template in dynamic schema format",
         "description": "Get the signers of a template in dynamic schema format.",
         "operationId": "GetDynamicSigners",
@@ -1536,7 +1584,9 @@
     },
     "/accounts/{accountId}/envelopes/{envelopeId}/recipients/{recipientId}/tabs": {
       "post": {
-        "tags": ["DocuSign"],
+        "tags": [
+          "DocuSign"
+        ],
         "summary": "Add tabs for a recipient",
         "description": "Add tabs for a recipient.",
         "operationId": "AddRecipientTabs",
@@ -1615,7 +1665,9 @@
     },
     "/document_types": {
       "get": {
-        "tags": ["StaticResponse"],
+        "tags": [
+          "StaticResponse"
+        ],
         "description": "Get document types.",
         "operationId": "StaticResponseForDocumentTypes",
         "responses": {
@@ -1632,7 +1684,9 @@
     },
     "/tab_types": {
       "get": {
-        "tags": ["StaticResponse"],
+        "tags": [
+          "StaticResponse"
+        ],
         "description": "Get tab types.",
         "operationId": "StaticResponseForTabTypes",
         "responses": {
@@ -1649,7 +1703,9 @@
     },
     "/recipient_types": {
       "get": {
-        "tags": ["StaticResponse"],
+        "tags": [
+          "StaticResponse"
+        ],
         "description": "Get recipient types.",
         "operationId": "StaticResponseForRecipientTypes",
         "responses": {
@@ -1666,7 +1722,9 @@
     },
     "/anchortab_schema": {
       "get": {
-        "tags": ["StaticResponse"],
+        "tags": [
+          "StaticResponse"
+        ],
         "description": "Get schema for a specific anchor tab.",
         "operationId": "StaticResponseForAnchorTabSchema",
         "parameters": [
@@ -1692,7 +1750,9 @@
     },
     "/recipienttype_schema": {
       "get": {
-        "tags": ["StaticResponse"],
+        "tags": [
+          "StaticResponse"
+        ],
         "description": "Get schema for a specific recipient type.",
         "operationId": "StaticResponseForRecipientTypeSchema",
         "parameters": [
@@ -1718,7 +1778,9 @@
     },
     "/font_faces": {
       "get": {
-        "tags": ["StaticResponse"],
+        "tags": [
+          "StaticResponse"
+        ],
         "description": "Get font faces.",
         "operationId": "StaticResponseForFontFaces",
         "responses": {
@@ -1735,7 +1797,9 @@
     },
     "/font_colors": {
       "get": {
-        "tags": ["StaticResponse"],
+        "tags": [
+          "StaticResponse"
+        ],
         "description": "Get font colors.",
         "operationId": "StaticResponseForFontColors",
         "responses": {
@@ -1752,7 +1816,9 @@
     },
     "/font_sizes": {
       "get": {
-        "tags": ["StaticResponse"],
+        "tags": [
+          "StaticResponse"
+        ],
         "description": "Get font sizes.",
         "operationId": "StaticResponseForFontSizes",
         "responses": {
@@ -1817,7 +1883,13 @@
           "x-ms-visibility": "important"
         },
         "envelopeEvents": {
-          "enum": ["Sent", "Delivered", "Completed", "Declined", "Voided"],
+          "enum": [
+            "Sent",
+            "Delivered",
+            "Completed",
+            "Declined",
+            "Voided"
+          ],
           "type": "string",
           "x-ms-summary": "Envelope event",
           "x-ms-visibility": "important"
@@ -2030,7 +2102,13 @@
           "type": "string",
           "x-ms-summary": "Envelope event",
           "x-ms-visibility": "important",
-          "enum": ["Sent", "Delivered", "Completed", "Declined", "Voided"]
+          "enum": [
+            "Sent",
+            "Delivered",
+            "Completed",
+            "Declined",
+            "Voided"
+          ]
         },
         "includeSenderAccountasCustomField": {
           "type": "string",
@@ -2443,7 +2521,9 @@
       }
     },
     "LoginAccount": {
-      "required": ["accountIdGuid"],
+      "required": [
+        "accountIdGuid"
+      ],
       "type": "object",
       "properties": {
         "name": {
@@ -2576,7 +2656,9 @@
       }
     },
     "EnvelopeTemplate": {
-      "required": ["templateId"],
+      "required": [
+        "templateId"
+      ],
       "type": "object",
       "properties": {
         "templateId": {
