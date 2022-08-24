@@ -856,6 +856,20 @@ public class Script : ScriptBase
       emailNotification["supportedLanguage"] = language;
       emailNotificationSet = true;
     }
+    if (body["countryCode"] != null && body["phoneNumber"] != null)
+    {
+      var phoneNumber = new JObject();
+      phoneNumber["countryCode"] = body["countryCode"];
+      phoneNumber["number"] = body["phoneNumber"];
+
+      var additionalNotification = new JObject();
+      additionalNotification["secondaryDeliveryMethod"] = "SMS";
+      additionalNotification["phoneNumber"] = phoneNumber;
+
+      var additionalNotifications = new JArray();
+      additionalNotifications.Add(additionalNotification);
+      signers[0]["additionalNotifications"] = additionalNotifications;
+    }
 
     if (!string.IsNullOrEmpty(query.Get("emailNotificationSubject")))
     {
