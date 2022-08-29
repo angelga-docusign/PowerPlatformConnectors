@@ -989,6 +989,22 @@
             "type": "string"
           },
           {
+            "name": "countryCode",
+            "in": "query",
+            "description": "For SMS notifications, the country code, without leading + sign.",
+            "type": "integer",
+            "x-ms-summary": "SMS Country Code",
+            "x-ms-visibility": "advanced"
+          },
+          {
+            "name": "phoneNumber",
+            "in": "query",
+            "description": "For SMS notifications, the phone number without the country code.",
+            "type": "integer",
+            "x-ms-summary": "SMS Phone Number",
+            "x-ms-visibility": "advanced"
+          },
+          {
             "name": "emailNotificationLanguage",
             "in": "query",
             "description": "Language for the email notification.",
